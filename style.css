@@ -2,6 +2,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    background-color: #f0ebeb;
   }
   
   header {
@@ -53,12 +54,14 @@ body {
    justify-content: space-around;
    gap: 15px;
    text-align:center;
+   
 
   }
   #videos iframe {
 
     width: 300px;
     height: 200px;
+    border-radius: 15px;
   }
   .form-group {
     margin-bottom: 20px;
