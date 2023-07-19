@@ -102,3 +102,11 @@ body {
     height: 120px;
     align-items: center;
    }
+
+   #map {
+    height: 500px;
+    width: 500px;
+  }
+  
+  
+  
