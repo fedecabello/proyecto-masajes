@@ -1,10 +1,12 @@
+* {
+  box-sizing: border-box;
+}
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f0ebeb;
-    height: 100%;
-    width: 100%;
+    min-height: 100%;
   }
   
   header {
@@ -49,7 +51,6 @@ body {
   
   #reservas { 
     width: 100%;
-    
     margin: 0 auto;
     display: flex;
     flex-direction: column;
