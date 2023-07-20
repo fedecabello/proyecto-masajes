@@ -3,6 +3,8 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f0ebeb;
+    height: 100%;
+    width: 100%;
   }
   
   header {
@@ -32,29 +34,43 @@ body {
   }
   
   section {
+    position: relative;
     padding: 40px;
   }
   
   footer {
+   
+    
     background-color: #333;
     color: #fff;
     padding: 20px;
     text-align: center;
   }
   
-  /* Estilos específicos */
+  #reservas { 
+    width: 100%;
+    
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+  }
   #reservas form,
   #patologias form {
+  
     margin-top: 20px;
     width: 50%;
+   
     
   }
   .lista-videos{
     display: flex;
    justify-content: space-around;
-   gap: 15px;
+   gap: 5px;
    text-align:center;
-   
+   flex-wrap: wrap ;
 
   }
   #videos iframe {
@@ -103,10 +119,11 @@ body {
     align-items: center;
    }
 
-   #map {
-    height: 500px;
-    width: 500px;
+  
+  #donde-estamos {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
   }
-  
-  
   
