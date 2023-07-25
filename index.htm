@@ -6,6 +6,7 @@
   <title>Página de Masajes</title>
  <link rel="stylesheet" href="style.css">
  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
 </head>
 <body>
   <header>
@@ -24,7 +25,7 @@
     <img  src="img/20230622_143620_0001-removebg-preview.png" alt="">
   </div>
   </header>
-  
+  <button type="button" class="btn-primary" id="modoOscuroBtn">Modo Oscuro</button>
   <section id="inicio">
     <h2>Bienvenidos a nuestra Casa  de Masajes</h2>
     <!-- Contenido adicional -->
@@ -59,8 +60,13 @@
             <label for="mensaje">Mensaje adicional:</label>
             <textarea id="mensaje" name="mensaje"></textarea>
           </div>
-          <button type="submit">Reservar</button>
+          <button type="submit" class="btn btn-primary" id="boton-reservar">Reservar</button>
         </form>
+        <div id="mensaje-exito" style="display: none;">¡El turno ah sido guardado con exito!</div>
+        <br>
+        <div>
+        <button id="volver" style="display: none;">Volver</button> 
+      </div>
       </section>
   
 
@@ -70,19 +76,19 @@
      <div class="lista-videos">
       <div class="video1">
          <iframe width="300"  height="300" src="https://media.istockphoto.com/id/1372347229/es/v%C3%ADdeo/im%C3%A1genes-de-video-4k-de-una-atractiva-joven-recibiendo-un-masaje-exfoliante-en-un-spa.mp4?s=mp4-640x640-is&k=20&c=B7Qthtbk3l0TYZxw7O99iKjZG6kOFP7igZrlYR1_Mfw="   frameborder="0" allowfullscreen></iframe>
-         <h2>masajes relajantes</h2>
+         <h2 class="title">masajes relajantes</h2>
        </div>
      <div class="video1">
       <iframe width="350"  height="350" src="https://media.istockphoto.com/id/1327048506/es/v%C3%ADdeo/toma-de-seguimiento-del-masajista-masculino-con-las-manos-fuertes-masajeando-los-hombros-del.mp4?s=mp4-640x640-is&k=20&c=-4b1vgSTbm3LxlNt934xz6ZMVzCScW1bBg8Gex5lu28="   frameborder="0" allowfullscreen></iframe>
-      <h2>masajes descontracturantes</h2>
+      <h2 class="title">masajes descontracturantes</h2>
       </div>
      <div class="video2">
        <iframe width="350"  height="350" src="https://media.istockphoto.com/id/1308961176/es/v%C3%ADdeo/hermosa-joven-morena-mujer-recibe-masaje-de-piedras-calientes-en-el-spa-de-d%C3%ADa-atractiva.mp4?s=mp4-640x640-is&k=20&c=OqwT_4BlUGPk-ByYCXFgt5Vu2sQoXRkCPsnM50j2at0="   frameborder="0" allowfullscreen></iframe>
-       <h2>piedras calientes</h2>
+       <h2 class="title">piedras calientes</h2>
      </div>
      <div class="video1">
        <iframe width="350"  height="350" src="https://media.istockphoto.com/id/1190170419/es/v%C3%ADdeo/mujer-asi%C3%A1tica-realiza-masaje-tailand%C3%A9s-tradicional-a-la-hermosa-mujer-europea-rehabilitaci%C3%B3n.mp4?s=mp4-640x640-is&k=20&c=goA1WSmtIwFqSPInzolfSAHfg4CJ6_MjZgz0XjYtfVk="   frameborder="0" allowfullscreen></iframe>
-         <h2>masaje tailandes</h2>
+         <h2 class="title">masaje tailandes</h2>
       </div> 
     
     </div>

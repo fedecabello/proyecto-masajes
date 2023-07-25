@@ -1,16 +1,49 @@
-document.getElementById('formulario-turnos').addEventListener('submit', function(event) {
-  event.preventDefault();
+document.getElementById("formulario-turnos").addEventListener("submit", validarFormulario);
 
-  const nombre = document.getElementById('nombre').value;
-  const email = document.getElementById('email').value;
-  const telefono = document.getElementById('telefono').value;
-  const fecha = document.getElementById('fecha').value;
-  const mensaje = document.getElementById('mensaje').value;
+function validarFormulario(event) {
+  event.preventDefault(); // Evitar que el formulario se envíe automáticamente
 
-  // Validar campos obligatorios antes de guardar los datos.
+  var nombre = document.getElementById("nombre").value;
+  var email = document.getElementById("email").value;
+  var telefono = document.getElementById("telefono").value;
+  var fecha = document.getElementById("fecha").value;
+  var mensaje = document.getElementById("mensaje").value;
+
   if (!nombre || !email || !telefono || !fecha) {
-    alert('Por favor, completa todos los campos obligatorios.');
-    return;
+    alert("Por favor, complete todos los campos obligatorios.");
+    return false;
   }
+
+  // Guardar los datos en un console.log
+  console.log("Nombre:", nombre);
+  console.log("Email:", email);
+  console.log("Teléfono:", telefono);
+  console.log("Fecha:", fecha);
+  console.log("Mensaje Adicional:", mensaje);
+
+  // Mostrar el mensaje de éxito
+  document.getElementById("mensaje-exito").style.display = "block";
+
+  // Ocultar el formulario después de enviarlo 
+  document.getElementById("formulario-turnos").style.display = "none";
+
+  document.getElementById("volver").style.display = "block";
+//para volver
+
+}
+
+document.getElementById("volver").addEventListener("click", function () {
+  // Mostrar el formulario nuevamente
+  document.getElementById("formulario-turnos").style.display = "block";
+
+  // Ocultar el mensaje de éxito y el botón "Volver"
+  document.getElementById("mensaje-exito").style.display = "none";
+  document.getElementById("volver").style.display = "none";
+  document.getElementById("formulario-turnos").reset();
+});
+
+document.getElementById("modoOscuroBtn").addEventListener("click", function () {
+  document.body.classList.toggle("modo-oscuro");
+});
 
  
