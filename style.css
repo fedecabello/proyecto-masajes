@@ -48,7 +48,19 @@ body {
     padding: 20px;
     text-align: center;
   }
-  
+  .iconos-redes{
+   display: flex;
+    justify-content: center;
+    gap: 20px;
+    
+  }
+  .fa-brands {
+    color: #fff;
+  }
+  .titulo-principal{
+    font-family: 'Permanent Marker', cursive;
+
+  }
   #reservas { 
     width: 100%;
     margin: 0 auto;
@@ -121,7 +133,7 @@ body {
    
     position: absolute;
      right: 50px;
-      top: 10px;
+      top: 0px;
      
   }
   .logo img{
@@ -136,6 +148,17 @@ body {
     flex-direction: column;
     text-align: center;
     align-items: center;
+  }
+
+  .mapouter{
+    text-align: right;
+    height: 281px;
+    width: 432px;
+  }
+  .gmap_canvas{
+    overflow: hidden;
+    background: none !important;
+    height: 281px;width: 432px;
   }
 
 
@@ -161,11 +184,43 @@ body {
    border-color: black;
    color:white;
    margin-top: 20px;
-   margin-right: 10px;
+   margin-left: 20px;
    border-radius: 10px;
   }
 
   body.modo-oscuro {
     background-color: #1a1a1a;
     color: #ffffff;
+  }
+
+
+
+  @media (max-width: 768px){
+    #inicio{
+      text-align: center;
+    }
+   #videos{
+      text-align: center;
+    }
+    .lista-videos{
+     
+      flex-wrap: wrap;
+      flex-direction: column;
+      justify-content: center;
+    }
+    #gmap_canvas{
+      width: 100%;
+      height: 100%;
+    }
+    .gmap_canvas{
+      width: 200px;
+      height: 200px;
+      justify-content: center;
+    }
+    .mapouter {
+      display: flex;
+     justify-content: center;
+      width: 100%;
+      height: 100%; 
+    }
   }
